@@ -5,9 +5,7 @@
     font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
-.caret-class {
-    opacity: .5;
-}
+.caret-class {opacity: .5;}
 
 ul {list-style-type: none;}
 
