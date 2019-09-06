@@ -1,57 +1,68 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+html, body {
+     width: 100%;
+     height: 100%;
+     padding: 0;
+     margin: 0;
+     font-family: 'Comic Sans MS', cursive, sans-serif;
+ }
+
+.container-body {
+    width: 100%;
+    height: 100%;
+    background: url('../images/burger-hero.jpg');
 }
 
-img, div a, .other-drop-down:hover .drop-down-content {display: block;}
+.nav a:hover {color: #d3d3d3;}
 
-.caret-class {opacity: .5;}
+.nav, .socials, .logo, .nav-bar, .header, #bars {display: flex;}
 
-.other:hover .caret-class {opacity: 1;}
+.rockey-logo {display: block;}
 
-.nav a:hover {color: black;}
+.twitter {color: #419dd6;}
 
-.nav-list-items, .social-list-items, .nav, .socials, .logo, .other, .nav-bar {display: flex;}
+.facebook {color: #325589;}
 
-.nav-bar, .drop-down-content {box-shadow: 8px 5px 20px -10px #333;}
-
-.nav-bar, .nav, .socials {justify-content: space-evenly;}
-
-.nav, .socials, .logo {align-items: center;}
+.nav-bar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 div a {
     text-decoration: none;
-    font-size: 25px;
-    padding: 0 10px;
-    margin: 0 15px;
+    font-size: 18px;
     color: gray;
+    padding: 3px 10px;
+    margin: 3px 15px;
 }
 
-.nav-bar {
-    height: 70px;
-}
-
-.logo {
-    padding: 0 10px;
-    margin: 0 15px;
-}
-
-.other {
-    align-items: flex-end;
-}
-
-.drop-down-content {
+.header {
     position: absolute;
-    width: 200px;
-    border: 1px black solid;
-    background-color: white;
-    border-radius: 5px;
-    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: white;
+    text-align: center;
 }
 
-.drop-down-content a {
-    margin: 10px;
-    padding: 15px;
+.title {
+    font-size: 90px;
+}
+
+.subtitle {
+    font-size: 25px;
+}
+
+.bars {
+    padding: 3px 10px;
+    margin: 3px 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-body {
+        background: url('../images/burger-hero-mobile.jpg');
+    }
 }
