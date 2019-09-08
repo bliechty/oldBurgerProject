@@ -1,17 +1,23 @@
 function dropdown() {
     let e = document.getElementById('drop-down-content').classList;
 
-    e.remove('display-none');
-    e.add('display-flex');
+    console.log(e[0]);
 
-    let f = document.getElementById('resp-nav').style.display = 'none';
-}
+    let inList = false;
 
-function closeNav() {
-    let e = document.getElementById('drop-down-content').classList;
+    for (let className of e) {
+        console.log(className);
+        if (className === 'display-none') {
+            inList = true;
+            break;
+        }
+    }
 
-    e.remove('display-flex');
-    e.add('display-none');
-
-    let f = document.getElementById('resp-nav').style.display = 'flex';
+    if (inList === true) {
+        e.remove('display-none');
+        e.add('display-flex');
+    } else {
+        e.remove('display-flex');
+        e.add('display-none');
+    }
 }
