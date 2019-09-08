@@ -13,7 +13,7 @@ html, body {
     background-size: cover;
 }
 
-.nav a:hover {color: #d3d3d3;}
+.nav a:hover, #icon:hover, #x:hover {color: #d3d3d3;}
 
 .nav, .socials, .logo, .nav-bar, .header {display: flex;}
 
@@ -72,37 +72,52 @@ div a {
     margin: 0 20px;
 }
 
-.drop-container {
+#drop-down-content {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#drop-down-content {
-    display: none;
     position: absolute;
     z-index: 1;
-    background-color: rgba(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
     flex-direction: column;
     text-align: center;
-    border: 1px gray solid;
-    border-radius: 20px;
     align-items: center;
 }
 
 #drop-down-content .nav {
-    display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+#drop-down-content a {
+    margin: 10px;
 }
 
 #resp-nav {
     display: none;
 }
 
+.display-flex {
+     display: flex;
+ }
+
 .display-none {
     display: none;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: gray;
+    font-size: 18px;
+    width: 100%;
+}
+
+#x {
+    padding: 5px;
+    margin: 10px;
+    display: block;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
@@ -117,7 +132,7 @@ div a {
         display: none;
     }
 
-    #drop-down-content {
+    #resp-nav {
         display: flex;
     }
 }
