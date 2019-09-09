@@ -5,12 +5,12 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='https://kit.fontawesome.com/a07f29bb2f.js'></script>
-    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:900&display=swap' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
     <script src='../js/index.js'></script>
     <link rel='stylesheet' href='../css/main.css'>
 </head>
 <body>
-<div class='container-body'>
+<div class='container-first-page'>
     <div class='nav-bar' id='full-nav'>
         <div class='logo'>
             <a href='index.html'><img src='../images/rockeyburgers02-logo.png' alt='rockey-logo' class='rockey-logo' height='40'/></a>
@@ -33,25 +33,24 @@
             <a href='index.html'><img src='../images/rockeyburgers02-logo.png' alt='rockey-logo' class='rockey-logo' height='40'/></a>
         </div>
         <div class='drop-down'>
-            <i class="fas fa-bars bars" id='icon' onclick="dropdown()"></i>
+            <i class="fas fa-bars bars" id='icon' onclick="openNav()"></i>
         </div>
     </div>
     <div id='drop-down-content' class='display-none'>
-        <div class='nav'>
-            <div class='nav-top'>
-                <a href='menu.html'>Menu</a>
-                <a href='locations.html'>Locations</a>
-                <a href='jobs.html'>Jobs</a>
-            </div>
-            <div class='nav-bottom'>
-                <a href='about.html'>About</a>
-                <a href='subscribe.html'>Subscribe</a>
-                <a href='faq.html'>FAQ</a>
-            </div>
+        <div class='close-nav'>
+            <i class="fas fa-times" id='x' onclick='closeNav()'></i>
         </div>
-        <div class='socials'>
-            <a href='http://www.facebook.com/keyburgers' target='_blank'><i class='fab fa-twitter-square twitter'></i></a>
-            <a href='http://www.twitter.com/keyburgers' target='_blank'><i class='fab fa-facebook-square facebook'></i></a>
+        <div class='nav'>
+            <a href='menu.html'>Menu</a>
+            <a href='locations.html'>Locations</a>
+            <a href='jobs.html'>Jobs</a>
+            <a href='about.html'>About</a>
+            <a href='subscribe.html'>Subscribe</a>
+            <a href='faq.html'>FAQ</a>
+            <div class='socials'>
+                <a href='http://www.facebook.com/keyburgers' target='_blank'><i class='fab fa-twitter-square twitter'></i></a>
+                <a href='http://www.twitter.com/keyburgers' target='_blank'><i class='fab fa-facebook-square facebook'></i></a>
+            </div>
         </div>
     </div>
     <div class='header'>
@@ -63,5 +62,43 @@
         </div>
     </div>
 </div>
+<!--<div class='container-second-page'>-->
+<!--    <div class='header-2'>-->
+<!--        <h2>About</h2>-->
+<!--    </div>-->
+<!--    <div class='about'>-->
+<!--        <p>-->
+<!--            &nbsp;Slogan: Best Quality Burgers in town. Off the charts.-->
+<!--            Step into any ROCKEY BURGERS, and you’ll notice we’re different.-->
+<!--            From our famous (free) house-made pickles, to the hand-painted-->
+<!--            signage, to our cheerful staff, we build our restaurants like we build-->
+<!--            our burgers–sustainably, locally, and with an unwavering commitment-->
+<!--            to quality.-->
+<!--            Fresh, quality produce, meat, dairy and buns, sourced from partners-->
+<!--            located just miles from our restaurants, are the ingredients to making-->
+<!--            the perfect burger. This commitment to creating the best possible food-->
+<!--            for our guests is a direct reflection of our promise of creating fast food-->
+<!--            burgers using slow food values.-->
+<!--            Bite into any Super burger, and taste the difference.-->
+<!--            Our burgers, fries, and shakes are made with the finest,-->
+<!--            freshest ingredients available.-->
+<!--        </p>-->
+<!--        <p>-->
+<!--            &nbsp;All our beef is Rockey Farms, humanely-raised, vegetarian-fed,-->
+<!--            ground fresh daily, and sourced from a family-owned ranch.-->
+<!--            All of our shakes and cones are made with organic cream from-->
+<!--            Rockey Creamery, a small, family-owned, organic farm located South-->
+<!--            of Nephi, Utah.-->
+<!--            Our buns are baked to our specification by an artisan baker in Nephi,-->
+<!--            UT-->
+<!--            The potatoes we use to make our French fries are made from-->
+<!--            potatoes grown in North America by growers who are required to-->
+<!--            identify the genetic source of their seed potatoes. We do not work with-->
+<!--            genetically modified potato varieties. Our potatoes are processed-->
+<!--            fresh off the field and delivered to us without any modifications. We-->
+<!--            proudly serve Sir Kensington ketchup.-->
+<!--        </p>-->
+<!--    </div>-->
+<!--</div>-->
 </body>
 </html>
